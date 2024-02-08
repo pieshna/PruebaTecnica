@@ -33,8 +33,8 @@ class ReportesController extends Controller
     public function show($id)
     {
         $reporte = DB::table('reportes')
-            ->join('usuario', 'reportes.id_usuario', '=', 'usuario.id')
-            ->select('reportes.id', 'nombre_reporte', 'estado', 'usuario.email', 'reportes.created_at', 'reportes.updated_at')
+            ->join('usuario', 'reportes.userId', '=', 'usuario.id')
+            ->select('reportes.id', 'nombre_reporte', 'estado', 'reportes.userId', 'usuario.email', 'reportes.created_at', 'reportes.updated_at')
             ->where('reportes.id', '=', $id)
             ->get();
         return response()->json($reporte);
