@@ -1,7 +1,8 @@
 
 # Prueba Tecnica
 
-Este repositorio contiene 3 carpetas en las cuales se encuentran lo necesario para la realizacion de la prueba.
+Este repositorio contiene 4 carpetas en las cuales se encuentran lo necesario para la realizacion de la prueba.
+- En carpeta Videos tenemos videos explicativos de las 3 fases (prueba tecnica, proyecto y frontend)
 
 
 
