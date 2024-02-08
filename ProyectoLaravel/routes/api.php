@@ -23,7 +23,7 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 Route::middleware('auth:sanctum')->group(function () {
     Route::controller(UsuarioController::class)->group(function () {
         Route::get('usuario',  'index');
-        Route::post('register',  'store');
+        Route::post('register',  'store')->withoutMiddleware('auth:sanctum');
         Route::post('login',  'login')->withoutMiddleware('auth:sanctum');
         Route::get('usuario/{id}',  'show');
         Route::put('usuario/change/{id}',  'changeStatus');
